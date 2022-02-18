@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<svg class="live-label__icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false" style="fill: #f24a4a;width: 1024px;height: 1024px;">
+  <path d="M16 4c6.6 0 12 5.4 12 12s-5.4 12-12 12S4 22.6 4 16 9.4 4 16 4zm0-4C7.2 0 0 7.2 0 16s7.2 16 16 16 16-7.2 16-16S24.8 0 16 0z"></path>
+  <circle class="live-label__icon__dot" cx="16" cy="16" r="8.5"></circle>
+</svg>
+
+<style>
+.live-label__icon {
+  fill: #f24a4a;
+  width: 1024px;
+  height: 1024px;
+}
+
+.live-label__icon__dot {
+    -webkit-animation: live-label-pulsate ease 1.7s infinite;
+    animation: live-label-pulsate ease 1.7s infinite;
+    will-change: opacity;
+}
+
+@-webkit-keyframes live-label-pulsate {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: .3
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@keyframes live-label-pulsate {
+    0% {
+        opacity: 1
+    }
+
+    50% {
+        opacity: .3
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .live-label__icon__dot {
+        -webkit-animation: none;
+        animation: none
+    }
+}
+</style>
+</body></html>
